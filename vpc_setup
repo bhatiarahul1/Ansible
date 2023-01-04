@@ -1,0 +1,26 @@
+vpc_name: "devops-vpc"
+
+#VPC Range
+
+vpcCidr: '172.0.0.0/16'
+
+# Subnet
+
+PubSub1: 172.0.1.0/24
+PubSub2: 172.0.2.0/24
+PubSub3: 172.0.3.0/24
+PrivSub1: 172.0.4.0/24
+PrivSub2: 172.0.5.0/24
+PrivSub3: 172.0.6.0/24
+
+# Region
+
+region: "us-east-2"
+
+# ZOnes
+
+zone1: us-east-2a
+zone2: us-east-2b
+zone3: us-east-2c
+
+state: present

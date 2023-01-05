@@ -89,14 +89,14 @@
                      Name: devops-privatesubnet-3
      register: privsub3_out
 
-   -name: Creating IGW
-    ec2_vpc_igw:
+   - name: Creating IGW
+     ec2_vpc_igw:
         vpc_id: "{{vpc_out.vpc.id}}"
         region: "{{region}}"
         state: "{{state}}"
         tags:
           Name: devops-IGW
-    register: IGW_Out
+     register: IGW_Out
 
 
 

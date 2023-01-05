@@ -56,4 +56,5 @@
          Project: "Devops"
          Owner: "DevOps Team"
        group_id: "{{BastionSG_out.group_id}}"
+       vpc_sunet_id: "{{pubsub1id}}"
      register: bastionhost_out

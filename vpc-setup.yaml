@@ -139,7 +139,7 @@
                   gateway_id: "{{ NAT_GW.nat_gateway_id }}"
      register: private_route_table
 
-   - degub:
+   - debug:
        var: "{{item}}"
      loop:
        - vpc_out.vpc.id

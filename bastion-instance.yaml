@@ -55,5 +55,5 @@
          Name: "Bastion Host"
          Project: "Devops"
          Owner: "DevOps Team"
-       group_id: "{{BastionSG_out.group_id}}"
+       groupId: "{{BastionSG_out.group_id}}"
      register: bastionhost_out

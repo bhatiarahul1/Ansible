@@ -35,6 +35,9 @@
              cidr_ip: "{{myip}}"
      register: BastionSG_out
 
+   - debug:
+      var: BastionSG_out
+
    - name: Creating bastion host
      ec2:
        key_name: devops-bastion-key

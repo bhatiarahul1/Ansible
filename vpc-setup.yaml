@@ -26,6 +26,6 @@
       map_public: yes
       tags:
         Name: devops-publicsubnet-1
-      register: pubsub1_out
+     register: pubsub1_out
 
 

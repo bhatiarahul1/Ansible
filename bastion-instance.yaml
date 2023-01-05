@@ -13,7 +13,7 @@
      ec2_key:
        name: devops-bastion-key
        region: "{{region}}"
-       mode: 0600
+       #mode: 0600
      register: key_out
 
    - name: Save private key

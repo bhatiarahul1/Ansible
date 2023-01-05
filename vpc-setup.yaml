@@ -24,7 +24,7 @@
       state: "{{state}}"
       cidr: "{{PubSub1}}"
       map_public: yes
-      resource_tags:
+      tags:
         Name: devops-publicsubnet-1
       register: pubsub1_out
 

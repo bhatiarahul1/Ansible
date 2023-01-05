@@ -98,6 +98,22 @@
           Name: devops-IGW
      register: IGW_Out
 
+   - name: Creating route tables for IGW
+     ec2_vpc_route_table:
+         vpc_id: "{{vpc_out.vpc.id}}"
+         region: "{{region}}"
+         state: "{{state}}"
+         tags:
+           Name: devops-IGWroute
+         subnets:
+           - "{{ pubsub1_out.subnet.id }}"
+           - "{{ pubsub2_out.subnet.id }}"
+           - "{{ pubsub3_out.subnet_id }}"
+         routes:
+           - dest: 0.0.0.0/0
+             gateway_id: "{{ IGW_Out.gateway_id }}"
+     register: public_route_table
+
 
 
 

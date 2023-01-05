@@ -12,7 +12,7 @@
    - name: Create ec2 key
      ec2_key:
        name: devops-bastion-key
-       region: "{{region}}
+       region: "{{region}}"
        mode: 0600
      register: key_out
 

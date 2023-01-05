@@ -18,7 +18,7 @@
 
    - name: Save private key
      copy:
-       content: "{{key_out.key.private_key}}
+       content: "{{key_out.key.private_key}}"
        dest: "./bastion-key.pem"
      when: key_out.changed
 
